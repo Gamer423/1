@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GAMER COIN</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
 <div class="container">
         <div class="header">
             <div class="logotext">
-                <img id="logo" src="https://assets.stickpng.com/images/6095215353a8bf00040ff3a6.png" alt="">
+                <img id="logo" src="/img/game.png" alt="">
             <p id="tokenname">GAMER COIN</p>
             </div>
             
@@ -19,11 +22,13 @@
                 <div id="ABOUT"><p>ABOUT</p></div>
                 <div id="OUR PLAN"><p>OUR PLAN</p></div>
                 <div id="NFTS"><p>NFTS</p></div>
-                <div id="TELEGRAM"><p>TELEGRAM</p></div>
+                <div id="TELEGRAM"><p>TOURNAMENT</p></div>
                 <div id="CHART"><p>CHART</p></div>
                 <div id="SOCIALS"><p>SOCIALS</p></div>
                 <div id="WHITEPAPER"><p>WHITEPAPER</p></div>
             </div>
+
+            <div class="emptyheader"></div>
         </div>
 
         <div class="vid">
@@ -32,14 +37,17 @@
             </video>
 
             <div class="video2">
-                <video autoplay loop muted plays-inline id="lolvideo2">
-                    <source src="img/league.mp4" type="video/mp4">
-                </video>
+                <div class="video22">
+                    <video autoplay loop muted plays-inline id="lolvideo2">
+                        <source src="img/league.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
-            <div class="centertext">
-                <p id="centertext1">WELCOME</p>
-                <p id="centertext2">TO</p>
-                <p>GAMER COIN</p>
+            <div class="centertext" data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">
+                <p id="centertext1">WELCOME TO</p>
+                <p id="centertext2"></p>
+                <p id="centertext3">GAMER COIN</p>
+                <p style="font-size: 3vh;">THE FUTURE OF GAMING</p>
                 <div id="buttondiv">
                     <button>CHART</button> <button>TELEGRAM</button>
                 </div>
@@ -49,11 +57,57 @@
 
 
         <div class="about">
-            <h1 id="aboutus">ABOUT US</h1>
+            <div>We are a experienced team! Combined we have over 10 years of experience in the crypto/gaming space</div> 
+            <div><p>Why us? We will develop a program that will automatically matchmake the best of the best players together and we will livestream it on twitch</p></div> 
+            <div>About us! we are epic gamers since serason 1 and we will aoiwdjaowidj oaa do that to improve th ecrpyot space</div>
         </div>
+
+        <div class="choose">
+            <div><img id="banner" src="/img/banner.png" alt=""></div>
+            <div><img id="banner2" src="/img/banner.png" alt=""></div>
+            <div class="hidden" id="text" data-aos="fade-in" data-aos-duration="2500" data-aos-once="true">
+                <p>CHOOSE YOUR</p>
+                <p>CHAMPION</p>
+                <p>THE TOURNAMENT FOR A MASSIVE BNB PRIZE IS BEGINNING</p>
+            </div>
+
+            <div class="championtext hidden">
+                <div id="fighter" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true"><p>FIGHTER</p></div>
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-once="true"><p>ASSASSIN</p></div>
+                <div data-aos="fade-right" data-aos-duration="1500" data-aos-once="true"><p>MARKSMAN</p></div>
+                <div id="mage" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true"><p>MAGE</p></div>
+            </div>
+            <div class="champions">
+                <div class="fighter" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+                    <div></div>
+                </div>
+                <div class="assassin" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <div></div>
+                </div>
+                <div class="marksman" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <div></div>
+                </div>
+                <div class="mage" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutus">
+            <div><p id="ourplan">OUR PLAN</p></div>
+            <div id="ourplandiv">
+                <div>Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff.</div>
+                <div>Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff.</div>
+                <div>Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff. Our plan is to make epic tournaments and stuff.</div>
+            </div>
+        </div>
+
+        <div class="hidden">ASDASDASDASDASD</div>
 </div>
     
-
-    <script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

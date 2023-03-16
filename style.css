@@ -3,13 +3,13 @@ body {
 }
 
 .vid {
-    width: 100vw;
-    height: 500px;
+    width: 100%;
+    height: 75vh;
     overflow: hidden;
 }
 
 #lolvideo {
-    width: 1700px;
+    width: 150vw;
     margin: -25px;
     filter: blur(15px);
     overflow: hidden;
@@ -17,20 +17,27 @@ body {
 
 .video2 {
     position: absolute;
+    box-sizing: border-box;
+
     top: 55%;
     left: 50%;
-    /* bring your own prefixes */
     transform: translate(-50%, -50%);
-    width: 1200px;
-    height: 500px;
+    width: 80vw;
+    height: 70vh;
     overflow: hidden;
     border: 3px solid rgba(0, 0, 0, 0.533);
+    
 }
 
-#lolvideo2 {
-    margin-bottom: -75px;
-    border-bottom: 1px solid black;
+.video22 {
+    position: relative;
+    float: right;
+    right: 50%;
+}
 
+.video22 > video {
+    position: relative;
+    right: -50%;
 }
 
 .container {
@@ -42,22 +49,32 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    height: 10vh;
     background-color: #111;
 }
 
+.headertext {
+    gap: 2vw;
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptyheader {
+    flex: 1;
+}
 .logotext {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -50px;
-    flex: 1;
 }
 
 #logo {
     width: 50px;
     height: 50px;
-    margin-left: 30px;
+    margin-left: 5vh;
     justify-self: flex-start;
 }
 
@@ -73,15 +90,6 @@ body {
     color: grey;
 }
 
-
-.headertext {
-    flex: 4;
-    display: flex;
-    gap: 50px;
-    margin-right: auto;
-    margin-left: 125px;
-}
-
 .header div > p {
     color: white;
 }
@@ -92,10 +100,28 @@ body {
 
 
 .about {
-    background-color: rgb(159, 159, 217);
-    height: 700px;
+    background-image: url(/img/bkgrnd.png);
+    background-position: center;
+    height: 40vh;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about > div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    height: 20vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: rgba(128, 128, 128, 0.112);
+    padding: 2vh;
+    text-align: center;
+    font-size: 2vh;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 #aboutus {
@@ -109,34 +135,196 @@ body {
 
 .centertext {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 25%;
+        left: 25%;
+        right: 25%;
         color: white;
-        font-size: 50px;
         text-align: center;
-        height: 500px;
+        height: 50vh;
 }
 
 .centertext > p {
-    margin: 0px;
-    font-size: 85px;
+    margin: 0;
+    font-size: 6vw;
 }
 
 
 #buttondiv > button {
-    background-color: rgba(128, 128, 128, 0.248);
+    background-color: rgba(128, 128, 128, 0.665);
     border: 1px solid grey;
-    padding: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    font-size: 1vw;
+    border-radius: 10px;
 }
 
 #buttondiv {
-    margin-top: 75px;
+    margin-top: 5vw;
 }
 
 #buttondiv > button:hover {
-    background-color: rgba(128, 128, 128, 0.645);
+    background-color: rgba(128, 128, 128, 0.936);
 }
 
+.choose {
+    height: 80vh;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    background-color: rgb(217, 135, 68);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+    background-image: url(https://png.pngtree.com/background/20210712/original/pngtree-old-parchment-paper-background-texture-picture-image_1182983.jpg);
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: ;
+}
+
+#text :nth-child(1) {
+    font-size: 25px;
+    margin: 0px;
+
+}
+
+#text :nth-child(2) {
+    margin: 0;
+    font-size: 100px;
+}
+
+#text :nth-child(3) {
+    margin: 0px;
+    font-size: 25px;
+    margin-bottom: 2vh;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.385);
+    padding-bottom: 50px;
+}
+
+.champions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.champions > div {
+    flex: 1;
+    text-align: center;
+    height: 25vh;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border: 5px solid black;
+}
+
+.fighter {
+    margin-left: 5vw;
+    background-image: url("/img/draven.gif");
+}
+
+.mage {
+    margin-right: 5vw;
+    background-image: url("/img/mage.gif");
+}
+
+.marksman {    
+    background-image: url("/img/marksmangif.gif");
+}
+
+.assassin {
+    background-image: url("/img/assassin.gif");
+}
+
+.championtext {
+    display: flex;
+    gap: 50px;
+}
+.championtext > div {
+    flex: 1;
+    text-align: center;
+}
+
+.championtext > div > p {
+    font-size: 2vw;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    border-top: 1px solid black;
+    padding-top: 15px;
+
+
+}
+
+#fighter {
+    margin-left: 5vw;
+}
+
+#mage {
+    margin-right: 5vw;
+}
+
+#banner {
+    position: absolute;
+    height: 35vh;
+    margin-right: auto;
+    margin-top: -10vh;
+    margin-left: 5vw;
+}
+
+#banner2 {
+    position: absolute;
+    height: 35vh;
+    margin-top: -10vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: 5vw;
+}
+
+.aboutus {
+    background-color: rgb(255, 255, 255);
+    height: 70vh;
+}
+
+#ourplan {
+    margin: 0px;
+    text-align: center;
+    font-size: 3.5vw;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+    border-bottom: 1px solid grey;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2.5vh;
+    
+}
+
+#ourplandiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+#ourplandiv > div {
+    flex: 1;
+    border: 1px solid grey;
+    width: 35vw;
+    height: 35vh;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#ourplandiv > div:nth-child(1) {
+    margin-left: 5vw;
+}
+
+#ourplandiv > div:nth-child(3) {
+    margin-right: 5vw;
+}
